@@ -33,9 +33,9 @@ public class Main {
 
         String urlString = "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s";
 
-        String apiToken = "643407362:AAHQ_CNU9AiAJLWh_Vy7qemHCsOOFSOsppE";
+        String apiToken = "";
 
-        String chatId = "-1001286988814";
+        String chatId = "";
         String text = msg.stream().map(String::valueOf).collect(Collectors.joining());
 
         urlString = String.format(urlString, apiToken, chatId, text);
